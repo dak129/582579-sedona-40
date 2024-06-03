@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Каталог</title>
+</head>
+<body>
+<header class="page-header">
+	<nav class="navigation">
+		<img class="logo" src="" alt="логотип компании">
+		<ul class="navigation-list">
+			<li class="navigation-item"><a href="index.html">Главная</a></li>
+			<li class="navigation-item"><a href="#">О Седоне</a></li>
+			<li class="navigation-item"><a href="catalog.html">Гостиницы</a></li>
+		</ul>
+		<form class="navigation-form">
+			<label class="visually-hidden" for="site-search">Поиск по сайту</label>
+          <input type="search" id="site-search" name="query">
+				<!-- TO DO: implement counter-->
+          <button class="like" type="button">Хочу сюда</button>
+		</form>
+	</nav>
+</header>
+<main class="main-catalog">
+  <h1>Гостиницы Седоны</h1>
+  <!-- TO DO: implement house-icon Гостиницы -->
+  <form class="booking-form" action="https://echo.htmlacademy.ru/" method="post" name="booking-data">
+    <!-- TO DO: add classes -->
+    <fieldset>
+      <legend>Инфраструктура:</legend>
+      <div>
+        <input type="checkbox" id="pool" name="pool" checked>
+        <label for="pool">Бассейн</label>
+      </div>
+      <div>
+        <input type="checkbox" id="parking" name="parking" checked>
+        <label for="parking">Парковка</label>
+      </div>
+      <div>
+        <input type="checkbox" id="wifi" name="wifi">
+        <label for="wifi">Wi-fi</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Тип Жилья:</legend>
+      <div>
+        <input type="radio" id="hotel" name="house" checked>
+        <label for="hotel">Гостиница</label>
+      </div>
+      <div>
+        <input type="radio" id="motel" name="house">
+        <label for="motel">Мотель</label>
+      </div>
+      <div>
+        <input type="radio" id="flat" name="house">
+        <label for="flat">Апартаменты</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Стоимость, &#x20bd;</legend>
+      <!-- TO DO: implement scroller -->
+    </fieldset>
+    <input type="submit" value="Применить">
+    <!-- TO DO: implement reset button-->
+    <button type="button">Сбросить</button>
+  </form>
+  <section class="search-results">
+    <h2 class="visually-hidden">Результаты поиска</h2>
+    <p>Найдено гостиниц:</p>
+     <!-- TO DO: implement this section-->
+  </section>
+  <ul class="pagination">
+  <!--
+    <li class="pagination-item">
+      <a class="pagination-link pagination-prev pagination-disabled">
+        <span class="visually-hidden">Предыдущая страница</span>
+      </a>
+    </li>
+  -->
+    <li class="pagination-item">
+      <a class="pagination-link pagination-current">1</a>
+    </li>
+    <li class="pagination-item">
+      <a class="pagination-link" href="#">2</a>
+    </li>
+    <li class="pagination-item">
+      <a class="pagination-link" href="#">3</a>
+    </li>
+    <li class="pagination-item">
+      <a class="pagination-link" href="#">4</a>
+    </li>
+    <li class="pagination-item">
+      <a class="pagination-link pagination-ellipsis" href="#">...</a>
+    </li>
+    <li class="pagination-item">
+      <a class="pagination-link" href="#">10</a>
+    </li>
+  <!--
+    <li class="pagination-item">
+      <a class="pagination-link pagination-next" href="#">
+        <span class="visually-hidden">Следующая страница</span>
+      </a>
+    </li>
+  -->
+  </ul>
+</main>
+<footer class="page-footer">
+  <section class="subscription">
+    <h2 class="visually-hidden">Форма для подписки</h2>
+    <p class="uppercased">Подпишитесь на рассылку</p>
+    <p class="description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post" name="subscription-data">
+          <input type="email" placeholder="Ваш e-mail" name="email" required>
+      <input type="submit" value="Подписаться">
+    </form>
+  </section>
+  <section class="social">
+    <h2 class="visually-hidden">Контакты</h2>
+    <ul class="social-list">
+      <li class="social-item">
+        <a href="https://vk.com/htmlacademy"><img class="icon" src="" alt="иконка Вконтакте"></a>
+      </li>
+      <li class="social-item">
+        <a href="https://t.me/htmlacademy"><img class="icon" src="" alt="иконка Телеграмма"></a>
+      </li>
+      <li class="social-item">
+        <a href="https://www.youtube.com/user/htmlacademyru"><img class="icon" src="" alt="иконка Ютуба"></a>
+      </li>
+    </ul>
+    <a class="phone" href="tel:+78121212">+7 (812) 812-12-12</a>
+    <a href="https://up.htmlacademy.ru/htmlcss/40/project/sedona">
+      <img class="htmlacademy-logo" src="" alt="логотип Htmlacademy">
+    </a>
+  </section>
+</footer>
+</body>
+</html>
