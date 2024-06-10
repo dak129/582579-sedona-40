@@ -7,24 +7,22 @@
 <body>
   <header class="page-header">
 		<nav class="navigation">
-			<a href="index.html"><img class="logo" src="img/logo.svg" alt="логотип города"></a>
+			<a href="index.html"><img class="logo" src="images/logo.svg" width="140" height="70" alt="логотип города"></a>
 			<ul class="navigation-list">
 				<li class="navigation-item"><a href="index.html">Главная</a></li>
 				<li class="navigation-item"><a href="#">О Седоне</a></li>
-				<li class="navigation-item"><a href="catalog.html">Гостиницы</a></li>
+				<li class="navigation-item"><a href="catalog.html" aria-current="page">Гостиницы</a></li>
 			</ul>
 			<ul class="favourites">
-				<li><a href="#"><img src="img/search.svg" alt="поиск"></a></li>
-				<li><a href="#"><img src="img/heart.png" alt="избранное"><div class="circle">12</div></a></li>
+				<li><a href="#"><span></span></a></li>
+				<li><a href="#"><span>12</span></a></li>
 			</ul>
-			<a class="rectangle" href="catalog.html">Хочу сюда</a>
+			<a class="rectangle" href="catalog.html" aria-current="page">Хочу сюда</a>
 		</nav>
 	</header>
 <main class="main-catalog">
   <h1>Гостиницы Седоны</h1>
-  <!-- TO DO: implement house-icon Гостиницы -->
   <form class="booking-form" action="https://echo.htmlacademy.ru/" method="post" name="booking-data">
-    <!-- TO DO: add classes -->
     <fieldset class="catalog-fieldset">
       <legend class="catalog-legend">Инфраструктура:</legend>
       <div class="catalog-option">
@@ -57,10 +55,9 @@
     </fieldset>
     <fieldset class="catalog-fieldset">
       <legend class="catalog-legend">Стоимость, &#x20bd;</legend>
-      <!-- TO DO: implement scroller -->
     </fieldset>
     <button type="submit">Применить</button>
-    <button type="button">Сбросить</button>
+    <button type="reset">Сбросить</button>
   </form>
   <section class="search-results">
     <h2 class="visually-hidden">Результаты поиска</h2>
@@ -82,7 +79,7 @@
     <ul class="hotel-list">
       <li class="hotel-card">
         <a class="hotel-card-link" href="#">
-          <img class="hotel-card-image" src="#" alt="">
+          <img class="hotel-card-image" src="images/hotel-1.svg" width="300" height="212" alt="фото гостиницы">
           <h3 class="hotel-card-title">Amara Resort & Spa</h3>
         </a>
         <p class="product-card-features">
@@ -98,7 +95,7 @@
       </li>
       <li class="hotel-card">
         <a class="hotel-card-link" href="#">
-          <img class="hotel-card-image" src="#" alt="">
+          <img class="hotel-card-image" src="images/hotel-2.svg" width="300" height="212" alt="фото гостиницы">
           <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
         </a>
         <p class="product-card-features">
@@ -114,7 +111,7 @@
       </li>
       <li class="hotel-card">
         <a class="hotel-card-link" href="#">
-          <img class="hotel-card-image" src="#" alt="">
+          <img class="hotel-card-image" src="images/hotel-3.svg" width="300" height="212" alt="фото гостиницы">
           <h3 class="hotel-card-title">Desert Quail Inn</h3>
         </a>
         <p class="product-card-features">
@@ -130,7 +127,7 @@
       </li>
       <li class="hotel-card">
         <a class="hotel-card-link" href="#">
-          <img class="hotel-card-image" src="#" alt="">
+          <img class="hotel-card-image" src="images/hotel-4.svg" width="300" height="212" alt="фото гостиницы">
           <h3 class="hotel-card-title">GreenTree Inn</h3>
         </a>
         <p class="product-card-features">
@@ -181,18 +178,18 @@
     <h2 class="visually-hidden">Контакты</h2>
     <ul class="social-list">
       <li class="social-item">
-        <a href="https://vk.com/htmlacademy"><img class="icon" src="img/social-vk.png" alt="мы Вконтакте"></a>
+        <a href="https://vk.com/htmlacademy"><img class="icon" src="images/social-vk.png" alt="мы Вконтакте"></a>
       </li>
       <li class="social-item">
-        <a href="https://t.me/htmlacademy"><img class="icon" src="img/social-telegram.png" alt="мы в Телеграмме"></a>
+        <a href="https://t.me/htmlacademy"><img class="icon" src="images/social-telegram.png" alt="мы в Телеграмме"></a>
       </li>
       <li class="social-item">
-        <a href="https://www.youtube.com/user/htmlacademyru"><img class="icon" src="img/social-youtube.png" alt="мы на Ютубе"></a>
+        <a href="https://www.youtube.com/user/htmlacademyru"><img class="icon" src="images/social-youtube.png" alt="мы на Ютубе"></a>
       </li>
     </ul>
     <a class="phone" href="tel:+78121212">+7 (812) 812-12-12</a>
     <a href="https://up.htmlacademy.ru/htmlcss/40/project/sedona">
-      <img class="htmlacademy-logo" src="img/Logo-html.svg" alt="логотип Htmlacademy">
+      <img class="htmlacademy-logo" src="images/logo-html.svg" alt="логотип Htmlacademy">
     </a>
   </section>
 </footer>
