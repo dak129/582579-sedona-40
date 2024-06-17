@@ -14,7 +14,12 @@
   font-display: swap;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -22,11 +27,20 @@ body {
   line-height: 118%;
   text-align: center;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .visually-hidden {
-  color: red;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .logo {
@@ -71,15 +85,16 @@ ul, ol {
 }
 
 .count-likes {
+  border-radius: 50%;
   background-color: #7db54f;
   color: #ffffff;
 }
 
 .intro {
   background: url("../images/background/divider.png"), url("../images/background/index-background.jpg");
-  background-size: auto, cover;
+  background-size: 100%, cover;
   background-position: center bottom, center center;
-  background-repeat: no-repeat, no-repeat;
+  background-repeat: no-repeat;
   background-color: #82b3d3;
 }
 
@@ -93,14 +108,10 @@ ul, ol {
 }
 
 .uppercase-light {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 120%;
-  text-transform: uppercase;
-  color: #ffffff;
+    color: #ffffff;
 }
 
-.uppercase-small {
+.uppercase-2 {
   font-weight: 700;
   font-size: 24px;
   line-height: 117%;
@@ -109,12 +120,7 @@ ul, ol {
   color: #000000;
 }
 
-.uppercase-small-light {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 117%;
-  text-transform: uppercase;
-  text-align: center;
+.uppercase-2-light {
   color: #ffffff;
 }
 
@@ -127,14 +133,10 @@ ul, ol {
 }
 
 .description-light {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 118%;
-  text-align: center;
   color: #ffffff;
 }
 
-.description-small {
+.description-2 {
   font-weight: 400;
   font-size: 18px;
   line-height: 117%;
@@ -142,15 +144,11 @@ ul, ol {
   color: #333333;
 }
 
-.description-small-light {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 117%;
-  text-align: center;
+.description-2-light {
   color: #ffffff;
 }
 
-.advantages-item-heavy {
+.advantages-item {
   background-color: rgba(131, 179, 211, 1.0);
   color: #ffffff;
 }
@@ -165,33 +163,29 @@ ul, ol {
   color: #000000;
 }
 
-.house-wrapper {
+.conditions-item-wrapper {
   width: 400px;
   height: 385px;
-  background-image: url("../images/background/house.svg");
+  padding-top: 183px;
+  padding-left: 85px;
+  padding-right: 85px;
   background-size: auto;
-  background-position: center center;
+  background-position: top 81px center;
   background-repeat: no-repeat;
+}
+
+.house-icon {
+  background-image: url("../images/background/house.svg");
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.food-wrapper {
-  width: 400px;
-  height: 385px;
+.food-icon {
   background-image: url("../images/background/food.svg");
-  background-size: auto;
-  background-position: center center;
-  background-repeat: no-repeat;
   background-color: #ffffff;
 }
 
-.souvenir-wrapper {
-  width: 400px;
-  height: 385px;
+.souvenir-icon {
   background-image: url("../images/background/souvenir.svg");
-  background-size: auto;
-  background-position: center center;
-  background-repeat: no-repeat;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -213,10 +207,14 @@ ul, ol {
 }
 
 .subscription-backgrounded {
-  background-image: url("../images/background/subscribe.png");
+  background-image: url("../images/background/subscribe.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #82b3d3;
+}
+
+.page-footer {
+  background-color: #ffffff;
 }
 
 .email {
