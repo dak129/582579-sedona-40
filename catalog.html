@@ -82,27 +82,82 @@
     <fieldset class="catalog-fieldset">
       <legend class="catalog-legend">Стоимость, &#x20bd;</legend>
     </fieldset>
-    <button class="button-apply" type="submit">Применить</button>
-    <button class="button-reset" type="reset">Сбросить</button>
+    <div class="button-wrapper">
+      <button class="button-apply" type="submit">Применить</button>
+      <button class="button-reset" type="reset">Сбросить</button>
+    <div>
   </form>
   </section>
   <section class="search-results">
+    <div class="hotel-header">
     <h2 class="visually-hidden">Результаты поиска</h2>
-    <p class="uppercase">Найдено гостиниц: 38</p>
+    <p class="hotel-heading uppercase">Найдено гостиниц: 38</p>
     <select class="select-control" aria-label="Сортировка">
       <option value="cheap">Сначала дешёвые</option>
       <option value="popular">Сначала популярные</option>
       <option value="expensive">Сначала дорогие</option>
     </select>
+    <ul class="hotel-mode">
+    <li class="hotel-mode-item">
     <a class="button-light button-light-active" href="#">
       <span class="visually-hidden">Показать карточки</span>
+      <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_117101_169)">
+          <path d="M4 0H0V6H4V0Z" fill="black" />
+          <path d="M16 0H12V6H16V0Z" fill="black" />
+          <path d="M10 0H6V6H10V0Z" fill="black" />
+          <path d="M4 8H0V14H4V8Z" fill="black" />
+          <path d="M16 8H12V14H16V8Z" fill="black" />
+          <path d="M10 8H6V14H10V8Z" fill="black" />
+        </g>
+        <defs>
+          <clipPath id="clip0_117101_169">
+            <rect width="16" height="14" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
     </a>
+    </li>
+    <li class="hotel-mode-item">
     <a class="button-light" href="#">
       <span class="visually-hidden">Показать одну</span>
+      <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_117101_278)">
+          <path d="M16 12H0V14H16V12Z" fill="black" />
+          <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black" />
+        </g>
+        <defs>
+          <clipPath id="clip0_117101_278">
+            <rect width="16" height="14" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
     </a>
+    </li>
+    <li class="hotel-mode-item">
     <a class="button-light" href="#">
       <span class="visually-hidden">Показать список</span>
+      <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_117101_295)">
+          <path d="M2 0H0V2H2V0Z" fill="black" />
+          <path d="M16 0H4V2H16V0Z" fill="black" />
+          <path d="M2 4H0V6H2V4Z" fill="black" />
+          <path d="M16 4H4V6H16V4Z" fill="black" />
+          <path d="M2 8H0V10H2V8Z" fill="black" />
+          <path d="M16 8H4V10H16V8Z" fill="black" />
+          <path d="M2 12H0V14H2V12Z" fill="black" />
+          <path d="M16 12H4V14H16V12Z" fill="black" />
+        </g>
+        <defs>
+          <clipPath id="clip0_117101_295">
+            <rect width="16" height="14" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
     </a>
+    </li>
+    </ul>
+    </div>
     <ul class="hotel-list">
       <li class="hotel-card">
         <a class="hotel-card-link" href="#">
@@ -113,11 +168,15 @@
           <span class="hotel-card-type">Гостиница</span>
           <span class="hotel-card-price">От 4000 ₽</span>
         </p>
-        <a class="button" href="#">Подробнее</a>
-        <a class="button-favourites" href="#">В избранное</a>
+        <div class="hotel-card-actions">
+          <a class="button-details" href="#">Подробнее</a>
+          <a class="button-favourites" href="#">В избранное</a>
+        </div>
         <div class="hotel-card-rating">
           <div class="stars-4"></div>
-          <p class="hotel-card-value">Рейтинг: 8,5</p>
+          <div class="button-value">
+            <p class="hotel-card-value">Рейтинг: 8,5</p>
+          </div>
         </div>
       </li>
       <li class="hotel-card">
@@ -129,11 +188,15 @@
           <span class="hotel-card-type">Гостиница</span>
           <span class="hotel-card-price">От 5000 ₽</span>
         </p>
-        <a class="button" href="#">Подробнее</a>
-        <a class="button-favourites" href="#">В избранное</a>
+        <div class="hotel-card-actions">
+          <a class="button-details" href="#">Подробнее</a>
+          <a class="button-favourites" href="#">В избранное</a>
+        </div>
         <div class="hotel-card-rating">
           <div class="stars-4"></div>
-          <p class="hotel-card-value">Рейтинг: 9,2</p>
+          <div class="button-value">
+            <p class="hotel-card-value">Рейтинг: 9,2</p>
+          </div>
         </div>
       </li>
       <li class="hotel-card">
@@ -145,11 +208,15 @@
           <span class="hotel-card-type">Гостиница</span>
           <span class="hotel-card-price">От 2500 ₽</span>
         </p>
-        <a class="button" href="#">Подробнее</a>
-        <a class="button-favourites" href="#">В избранное</a>
+        <div class="hotel-card-actions">
+          <a class="button-details" href="#">Подробнее</a>
+          <a class="button-favourites" href="#">В избранное</a>
+        </div>
         <div class="hotel-card-rating">
           <div class="stars-3"></div>
-          <p class="hotel-card-value">Рейтинг: 6,9</p>
+          <div class="button-value">
+            <p class="hotel-card-value">Рейтинг: 6,9</p>
+          </div>
         </div>
       </li>
       <li class="hotel-card">
@@ -161,17 +228,21 @@
           <span class="hotel-card-type">Гостиница</span>
           <span class="hotel-card-price">От 1500 ₽</span>
         </p>
-        <a class="button" href="#">Подробнее</a>
-        <a class="button-favourites" href="#">В избранное</a>
+        <div class="hotel-card-actions">
+          <a class="button-details" href="#">Подробнее</a>
+          <a class="button-favourites" href="#">В избранное</a>
+        </div>
         <div class="hotel-card-rating">
           <div class="stars-2"></div>
-          <p class="hotel-card-value">Рейтинг: 5,0</p>
+          <div class="button-value">
+            <p class="hotel-card-value">Рейтинг: 5,0</p>
+          </div>
         </div>
       </li>
     </ul>
     <ul class="pagination">
-      <li class="pagination-item">
-        <a class="pagination-link pagination-current">1</a>
+      <li class="pagination-item pagination-item-current">
+        <a class="pagination-link pagination-link-current">1</a>
       </li>
       <li class="pagination-item">
         <a class="pagination-link" href="#">2</a>
@@ -182,8 +253,8 @@
       <li class="pagination-item">
         <a class="pagination-link" href="#">4</a>
       </li>
-      <li class="pagination-item">
-        <a class="pagination-link pagination-ellipsis" href="#">...</a>
+      <li class="pagination-item pagination-item-ellipsis">
+        <a class="pagination-link pagination-link-ellipsis" href="#">...</a>
       </li>
       <li class="pagination-item">
         <a class="pagination-link" href="#">10</a>

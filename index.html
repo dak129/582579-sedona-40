@@ -37,21 +37,23 @@
 		</nav>
 	</header>
   <main class="main-index">
-		<section class="intro">
+		<section class="hero">
 			<h1 class="visually-hidden">Сайт города Седона</h1>
-			<img src="images/welcome.svg" width="458" height="352" alt="welcome to the gorgeous
+			<img class="welcome" src="images/welcome.svg" width="458" height="352" alt="welcome to the gorgeous
       Sedona because the Grand Canyon sucks!">
 		</section>
 		<section class="advantages">
-			<h2 class="visually-hidden">Преимущества</h2>
-			<p class="uppercase">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-			<p class="description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+      <div class="advantages-header">
+			  <h2 class="visually-hidden">Преимущества</h2>
+			  <p class="uppercase">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+			  <p class="description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+      </div>
 			<ul class="advantages-list">
 				<li class="advantages-item">
-        <div class="advantages-item-wrapper">
-					<h3 class="uppercase-2 uppercase-2-light">Настоящий городок</h3>
-          <hr class="underliner">
-					<p class="description-2 description-2-light">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        <div class="advantages-item-light-wrapper">
+					<h3 class="advantages-heading-light uppercase-2 uppercase-2-light">Настоящий городок</h3>
+          <div class="overlined-light"></div>
+          <p class="advantages-text description-2 description-2-light">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
         </li>
         <li class="advantages-item advantages-item-photo">
@@ -59,30 +61,30 @@
         </li>
 				<li class="advantages-item advantages-item-light">
         <div class="advantages-item-wrapper">
-					<h3 class="uppercase-2">Небольшая площадь</h3>
-          <hr class="underliner">
-					<p class="description-2">Все достопримечательности находятся очень близко</p>
+					<h3 class="advantages-heading uppercase-2">Небольшая площадь</h3>
+          <div class="overlined"></div>
+          <p class="advantages-text description-2">Все достопримечательности находятся очень близко</p>
         </div>
         </li>
 				<li class="advantages-item advantages-item-medium">
         <div class="advantages-item-wrapper">
-					<h3 class="uppercase-2">Красивая дорога</h3>
-          <hr class="underliner">
-					<p class="description-2">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+					<h3 class="advantages-heading uppercase-2">Красивая дорога</h3>
+          <div class="overlined"></div>
+          <p class="advantages-text description-2">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
         </li>
 				<li class="advantages-item advantages-item-light">
         <div class="advantages-item-wrapper">
-					<h3 class="uppercase-2">Мало туристов</h3>
-          <hr class="underliner">
-					<p class="description-2">Большинство едет в Гранд Каньон и толпится там</p>
+					<h3 class="advantages-heading uppercase-2">Мало туристов</h3>
+          <div class="overlined"></div>
+          <p class="advantages-text description-2">Большинство едет в Гранд Каньон и толпится там</p>
         </div>
         </li>
 				<li class="advantages-item">
-        <div class="advantages-item-wrapper">
-					<h3 class="uppercase-2 uppercase-2-light">Там есть мост дьявола</h3>
-          <hr class="underliner">
-					<p class="description-2 description-2-light">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+        <div class="advantages-item-light-wrapper">
+					<h3 class="advantages-heading-light uppercase-2 uppercase-2-light">Там есть мост дьявола</h3>
+          <div class="overlined-light"></div>
+          <p class="advantages-text description-2 description-2-light">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </div>
         </li>
         <li class="advantages-item advantages-item-photo">
@@ -127,32 +129,34 @@
 			<h2 class="visually-hidden">Форма для подписки</h2>
 			<p class="subscription-uppercase">Подпишитесь на рассылку</p>
 			<p class="description-light">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <div class="subscription-form-wrapper">
 			<form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post" name="subscription-data">
             <input class="email" type="email" placeholder="Ваш e-mail" name="email" required>
 				<button class="button-subscribe" type="submit">Подписаться</button>
 			</form>
+      </div>
 		</section>
 	</main>
 	<footer class="page-footer">
     <section class="social">
       <h2 class="visually-hidden">Контакты</h2>
-		  <ul class="social-list">
-			  <li class="social-item">
+      <ul class="social-list">
+        <li class="social-item">
           <a href="https://vk.com/htmlacademy" title="мы Вконтакте"><div class="social-vk"></div></a>
-			  </li>
+        </li>
         <li class="social-item">
           <a href="https://t.me/htmlacademy" title="мы в Телеграмме"><div class="social-telegram"></div></a>
         </li>
-			  <li class="social-item">
+        <li class="social-item">
           <a href="https://www.youtube.com/user/htmlacademyru" title="мы на Ютуб"><div class="social-youtube"></div></a>
         </li>
-		  </ul>
-		  <a class="phone" href="tel:+78121212">+7 (812) 812-12-12</a>
-		  <a href="https://up.htmlacademy.ru/htmlcss/40/project/sedona" title="Htmlacademy">
-			  <div class="htmlacademy-logo"></div>
-		  </a>
+      </ul>
+      <a class="phone" href="tel:+78121212">+7 (812) 812-12-12</a>
+      <a href="https://up.htmlacademy.ru/htmlcss/40/project/sedona" title="Htmlacademy">
+        <div class="htmlacademy-logo"></div>
+      </a>
     </section>
-	</footer>
+    </footer>
 </div>
 </body>
 </html>
